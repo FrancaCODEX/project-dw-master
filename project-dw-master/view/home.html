@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Portal SEKOU</title>
+        <link rel="stylesheet" type="text/css" href="../css/home.css" media="screen" />        
+    </head>
+    <body>
+        <div style="display: none;" id="loader"></div>
+
+        <header>
+            <a class="logo" href="../index.html"><img src="../imagens/logo_Sekou_transparente.png" /></div></a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Index</a></li> |
+
+                <li><a href="./cadastro.html">Cadastro</a></li> |
+                <li class="acessoRestrito" style="display: none;"><a href="./home.html">Endereço</a></li> <span class="acessoRestrito" style="display: none;">|</span>
+
+                <li><a id="loginLogof" href="./login.html">Acesso restrito</a></li>
+            </ul>
+        </nav>
+        <section class="form">
+            <h2>Lista de endereços cadastrados</h2>
+                <form id="frmEnderecos" method="POST" action="">
+                    <p id="msgErro" style="color:red"></p>
+
+                    <input type="button" class="btnSalvar" value="Cadastrar novo endereço" onclick="Editar()">
+
+                    <table style="width: 100%;" border="1" id="lsEnderecos">        
+                    </table>
+                </form>            
+        </section>
+
+        <footer>
+            <p>Empresa situada em algum lugar do planeta, na rua alguma coisa, 70. São Paulo-SP, CEP: 070070-70</p>
+        </footer>
+
+        <script src="../script/util.js"></script> 
+        <script src="../script/home.js"></script>    
+
+    </body>
+</html>
